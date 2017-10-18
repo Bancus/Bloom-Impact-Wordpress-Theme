@@ -314,7 +314,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider-work Start 
 --*/
 #global-header {
-  background: url("../img/about.jpg") no-repeat;
+  background: url("img/about.jpg") no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
@@ -354,7 +354,7 @@ font header .navbar-default .navbar-nav li a:hover {
   word-spacing: 3px;
 }
 #news {
-  background: url("../img/news.jpg") no-repeat;
+  background: url("img/news.jpg") no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
@@ -394,7 +394,7 @@ font header .navbar-default .navbar-nav li a:hover {
   word-spacing: 3px;
 }
 #contact-b {
-  background: url("../img/contact.jpg") no-repeat;
+  background: url("img/contact.jpg") no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
@@ -507,7 +507,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	slider-contact Start 
 --*/
 #home-contact {
-  background: url("../img/slider-bg2.jpg") no-repeat;
+  background: url("img/slider-bg2.jpg") no-repeat;
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 80px;
@@ -974,9 +974,6 @@ animation: dude .34005s 1000 forwards;
   }
 }
 @media(max-width:767px){
-  #team{
-    padding-top: 30px !important;
-  }
   .bloom-vid-wrap{
     padding: 30px !important;
   }
@@ -1093,3 +1090,7 @@ animation: dude .34005s 1000 forwards;
   font-size: 16px !important;
   color: rgba(255, 255, 255, 0.7) !important;
 }
+  #team{
+    padding-top: 80px !important;
+    outline: 0 !important;
+  }

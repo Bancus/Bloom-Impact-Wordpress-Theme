@@ -1,3 +1,51 @@
+jQuery('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = jQuery(this.hash);
+      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        jQuery('html, body').animate({
+          scrollTop: target.offset().top - 58
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var jQuerytarget = jQuery(target);
+          jQuerytarget.focus();
+          if (jQuerytarget.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            jQuerytarget.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            jQuerytarget.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+jQuery(document).ready(function(){
+	jQuery("#clients-logo").owlCarousel({
+		autoPlay: 3000,
+		items : 5,
+		itemsDesktop : [1199,5],
+		itemsDesktopSmall : [979,5],
+	});
+	jQuery("#testimonial-slider").owlCarousel({
+	    paginationSpeed : 1000,      
+	    singleItem:true,
+	});
+});
+
 function initparticles() {
    hlines();
    lines();
@@ -51,7 +99,7 @@ jQuery.rnd = function(m, n) {
 };
 
 initparticles();
-/*
+
 jQuery(document).ready(function(){
     animateDiv();
     
@@ -94,7 +142,7 @@ function calcSpeed(prev, next) {
 
     return speed;
 
-}*/
+}
 
 jQuery(function(){
 var bloomslider = [],
@@ -117,76 +165,4 @@ var bloomslider = [],
     }
     cyclehm();
 });
-jQuery('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = jQuery(this.hash);
-      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        jQuery('html, body').animate({
-          scrollTop: target.offset().top - 58
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var jQuerytarget = jQuery(target);
-          jQuerytarget.focus();
-          if (jQuerytarget.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            jQuerytarget.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            jQuerytarget.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
-jQuery(document).ready(function(){
-	jQuery("#clients-logo").owlCarousel({
-		autoPlay: 3000,
-		items : 5,
-		itemsDesktop : [1199,5],
-		itemsDesktopSmall : [979,5],
-	});
-	jQuery("#testimonial-slider").owlCarousel({
-	    paginationSpeed : 1000,      
-	    singleItem:true,
-	});
-});
-
-jQuery('#emma').click(function(){
-      jQuery('#testimonial-slider').trigger('owl.goTo', 7)
-    });
-     jQuery('#ben').click(function(){
-      jQuery('#testimonial-slider').trigger('owl.goTo', 6)
-    });
-      jQuery('#daniel').click(function(){
-      jQuery('#testimonial-slider').trigger('owl.goTo', 5)
-    });
-      jQuery('#andrew').click(function(){
-      jQuery('#testimonial-slider').trigger('owl.goTo', 4)
-    });
-      jQuery('#edward').click(function(){
-      jQuery('#testimonial-slider').trigger('owl.goTo', 3)
-    });
-      jQuery('#george').click(function(){
-      jQuery('#testimonial-slider').trigger('owl.goTo', 2)
-    });
-      jQuery('#hutchful').click(function(){
-      jQuery('#testimonial-slider').trigger('owl.goTo', 1)
-    });
-      jQuery('#carol').click(function(){
-      jQuery('#testimonial-slider').trigger('owl.goTo', 0)
-    });
 
