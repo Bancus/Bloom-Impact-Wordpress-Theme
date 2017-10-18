@@ -17,7 +17,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                   <img src="<?php bloginfo('template_url'); ?>/img/logo.png" class="small-sz" alt="Bloom Impact Logo">
                 </a>
               </div>
@@ -44,7 +44,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Drop Us A Note</h1>
+                  <h3>Drop Us A Note</h3>
                   <p>Need Help? Want a partner. Don't hesitate to contact us.</p>
                 </div>
               </div>

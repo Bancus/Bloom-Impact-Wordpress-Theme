@@ -1,6 +1,8 @@
   <?php get_header();
-  		//Template Name:News
-   ?>
+      //Template Name:News
+$post = $_GET['postid'];
+$bloom_post = get_post($post);
+?>
     <!-- Header Start -->
   <header class="header">
     <div class="container">
@@ -39,48 +41,20 @@
     </header><!-- header close -->
     <!-- ..................................Content................................................-->
  <!-- Slider Start -->
-        <section id="news">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                        <h3>Our Latest News Updates</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Content Start -->
     <section id="testimonial">
       <div class="container">
         <div class="col-sm-8">
+          <article>
+           <h2><?php echo $bloom_post->post_title;?></h2>
+           <p>
+            <div class="clearfixe">
+              <?php echo $bloom_post->post_content;?>
+            </div>
+          </p> 
 
-          <?php
-/*
- * Template name: News
- */
-$current_page = (get_query_var('paged')) ? get_query_var('paged') : 1; // get current page number
-$args = array(
-  'posts_per_page' => get_option('posts_per_page'), // the value from Settings > Reading by default
-  'paged'          => $current_page // current page
-);
-query_posts( $args );
- 
-$wp_query->is_archive = true;
-$wp_query->is_home = false;
- 
-while(have_posts()): the_post();
-  ?>
-  <h2><?php the_title() /* post title */ ?></h2>
+          </article>
 
-  <p><?php the_excerpt(); ?></p>
-   <p><a href="<?php the_permalink() ?>?postid=<?php echo $id; ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="button btn btn-xs btn-default btn-bloom">Read More</a></p>
-   <hr/>
-  <?php
-endwhile;
-
-if( function_exists('wp_pagenavi') ) wp_pagenavi(); // WP-PageNavi function
-?>
 </div>
 <div class="col-sm-4">
   <div class=" news-twitter">

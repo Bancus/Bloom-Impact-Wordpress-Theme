@@ -15,7 +15,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                   <img src="<?php bloginfo('template_url'); ?>/img/logo.png" class="small-sz" alt="Bloom Impact Logo">
                 </a>
               </div>
@@ -205,5 +205,50 @@ Helping MSMEs successfully grow their business is core to our mission.</p>
     <!-- ..................................End Content................................................-->
     <?php get_footer(); ?>
     <?php wp_footer(); ?>
+    <script>
+      jQuery(document).ready(function(){
+    animateDiv();
+    
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = 20;
+    var w = jQuery('.container').width() / 4.5;
+    
+    var nh = h;
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(){
+    var newq = makeNewPosition();
+    var oldq = jQuery('.bloom-wrap').offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+    
+    jQuery('.bloom-wrap').animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    
+};
+
+function calcSpeed(prev, next) {
+    
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+    
+    var greatest = x > y ? x : y;
+    
+    var speedModifier = 0.05;
+
+    var speed = Math.ceil(greatest/speedModifier);
+
+    return speed;
+
+}
+    </script>
     </body>
 </html>
