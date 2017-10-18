@@ -3,8 +3,8 @@
 <head>
    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bloom Impact - A Financial partners Marketplace</title>
-    <meta name="description" content="Bloom Impact - A Financial partners Marketplace">
+    <title>Bloom Impact - A Financial Services Marketplace</title>
+    <meta name="description" content="Bloom Impact is a digital marketplace that helps small business owners in emerging markets easily access financial services for their business, like loans and savings, right through their smartphone. We eliminate the costs and hassle for business owners and providers in accessing and offering financial services.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->

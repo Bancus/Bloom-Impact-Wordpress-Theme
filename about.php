@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="block">
-                        <h4>ABOUT US</h4>
+                        <h3>ABOUT US</h3>
                     </div>
                 </div>
             </div>
@@ -58,8 +58,6 @@ We aim to democratize how unbanked and underserved micro and small businesses ge
         </div>
         <div class="col-sm-12 col-xs-12">
             <div class="section-title">
-                <span class="bloom-title-info">01. Bloom Impact Team</span>
-                <br/><br/>
                 <h1 class="bloom-title">Team</h1>
               </div>
         </div>
@@ -127,7 +125,7 @@ After 15 years living in Paris, Carol and her family are now happily enjoying li
                     </div>
                     <p class="text-left">David leads all aspects of technology development for Bloom Impact. With extensive experience leading and mentoring technology teams, David has expertise in Software Development and Human-Centered Design and has worked on 3 continents, including emerging markets, designing and building award winning technology solutions that are informed by a nuanced understanding of the socio-economic/cultural contexts of the problems.</p>
                     <p class="text-left">
-Before Bloom Impact, David was the founding CTO of <a href="http://www.engagespark.com/" target="_blank">engageSpark</a>, where he continues to serve as an advisor; the Director of Technology Innovation at Grameen Foundation; the founder and CEO of Hutchlabs, a design innovation consultancy; and he was a member of Microsoft Research’s Technology for Emerging Markets Team, where he conducted research, published and consulted on the design and use of technology in the areas of education and financial services. 
+Before Bloom Impact, David was the founding CTO of engageSpark, where he continues to serve as an advisor; the Director of Technology Innovation at Grameen Foundation; the founder and CEO of Hutchlabs, a design innovation consultancy; and he was a member of Microsoft Research’s Technology for Emerging Markets Team, where he conducted research, published and consulted on the design and use of technology in the areas of education and financial services. 
 </p><p class="text-left">
 When he is not hacking ideas or technology, David loves to travel, experience different cultures &amp; food, and  read. He is also always available to play or watch football/soccer."</p>
                 </div>
@@ -150,8 +148,7 @@ In his free time, you’ll find George swimming, singing with his church choir o
                     <p class="text-left">Edward is a mobile developer helping craft our Android App. As an experienced Software Engineer for both Android and iOS development, he is able to solve complex problems, develop high-performance applications, and leverage the latest programming languages to meet challenging business requirements. He has keen interest in Machine Learning and its application to Financial Services, Agriculture, and Health.</p>
                     <p class="text-left">
 Prior to Bloom Impact, Edward has worked as a mobile App developer at Saya Inc. and Rancard Solutions Ltd, as a backend developer at IC Securities Ltd, and as a Software Engineer (backend + mobile App Dev) at SMSGH Ltd.
-Edward is an avid reader and always ready to play football or swim at the beach anytime of the day..</p>
-                </div>
+Edward is an avid reader and always ready to play football or swim at the beach anytime of the day..</p>                </div>
             <div>
                     <div class="user">
                       <img src="<?php bloginfo('template_url'); ?>/img/team/andrew.jpg" alt="Edward Pie">
@@ -180,24 +177,36 @@ Outside of pursuing his commitment to social impact, Daniel enjoys eating his mo
                       <img src="<?php bloginfo('template_url'); ?>/img/team/ben.jpg" alt="Daniel Park">
                       <p><span>Benedict Asamoah</span> Full Stack Developer</p>
                     </div>
-                    <p class="text-left">Benedict is an interaction designer &amp; front-end developer for Bloom Impact P.B.C residing in Accra - Ghana. Benedict solve problems and beautify things. Yep, He love beautifying things with his front-end skills.</p><p class="text-left">
-Benedict is an AI enthusiast and cognitive developer and have evolved from tackling one problem to the other, from building a " Q and A" platform at age 16, Joining a team of three to build a payment gateway, working as an intern and contributing to the development of Snoocode, a geomapping solution and Creating Ventsell a ticket aggregating service in Africa.<br/>
-Benedict have over five years professional experience in web technologies and love working in both Agile and Waterfall settings.
-Benedict enjoy EDM (Electronic Dance Music) and playing video games during his free time</p>
+                    <p class="text-left">As a Full Stack developer, Benedict works on a variety of things including interaction design &amp; front-end development. Benedict loves to solve problems and create a delightful user experience. 
+                    </p><p class="text-left">
+He is an AI enthusiast and cognitive developer and has evolved from tackling one challenge
+after another. Benedict has over five years professional experience in web technologies and loves working in both Agile and Waterfall settings.  His experience includes building a " Q &amp; A" platform at the age of 16, joining a lean team to build a
+payment gateway, working on product development at Snoocode, a
+geomapping solution in Ghana and creating a digital platform called Ventsell, a ticket aggregating service in Africa.
+</p><p class="text-left">
+Benedict enjoys EDM (Electronic Dance Music) - keeping the team updated on the latest -  and playing video games during his free time.
+</p>
                 </div>
                  <div>
                     <div class="user">
                       <img src="<?php bloginfo('template_url'); ?>/img/team/emma.jpg" alt="Daniel Park">
                       <p><span>Emmanuel Baah</span> Operations</p>
                     </div>
-                    <p class="text-left">Emmanuel is a part time consultant keenly driving technology innovations and MSME adoption of our service on the ground through various partnerships and events, supporting product testing as well as providing customer service.
-</p><p class="text-left">
-He is a research and data analyst at RIMCS Consult, a management consultancy firm. He is an adaptable data analyst skilled in recording, interpreting and analysing data in a fast-paced environment. Experienced in preparing detailed documents and reports while managing complex internal and external data analysis responsibilities.
-</p><p class="text-left">
-He has over the years built expertise in undertaking projects such as, Challenges of Women in Small Scale Enterprises In Ghana, Digitally Empowering Underserved MSMEs, Ghana Banking Awards (Customer Care/Advisory Service Survey), Socio-Economic Household Survey, Microfinance Institutional Mapping under RAFiP, Ghana Forest Investment Program, Evaluation Survey on Housing Microfinance Product Prototype; WASH Baseline Survey, Institutional and Impact Assessment Studies among others.
-</p><p class="text-left">
-Emmanuel holds a Bachelor of Arts Degree in Economics and Statistics from the University of Ghana, Legon. He has other certificates in product development, customer service, entrepreneurship development and effective team management skills. 
-In his free time, he loves to spend time with his family, watch football, get involved at church activities or listen to music.
+                    <p class="text-left">Emmanuel is an Operations Associate for Bloom Impact working part-time to drive MSME
+adoption of our service in the field and through various partnerships and events.  He also provides customer support and
+shares insights for our product development since he knows first hand how business owners use our App and what they need.</p>
+<p class="text-left">
+Emmanuel's background is in Inclusive Finance with experience in research, data analysis and consulting. 
+His experience includes working on projects such as, Challenges of Women in Small Scale Enterprises In Ghana, Digitally Empowering Underserved MSMEs, Ghana
+Banking Awards (Customer Care/Advisory Service Survey), Socio-Economic Household Survey, Microfinance Institutional Mapping under RAFiP, Ghana Forest Investment Program,
+Evaluation Survey on Housing Microfinance Product Prototype; WASH Baseline Survey, Institutional and Impact Assessment Studies among others.
+</p>
+<p class="text-left">
+Emmanuel holds a Bachelor of Arts Degree in Economics and Statistics from the University
+of Ghana, Legon. He has other certificates in product development, customer service,
+entrepreneurship development and effective team management skills.
+In his free time, he loves to spend time with his family, watch football, get involved at
+church activities or listen to music.
 </p>
                 </div>
             </div>

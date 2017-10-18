@@ -23,9 +23,9 @@
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#intro">How it works</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="news">News</a></li>
+                    <li><a href="/index.php/about">About</a></li>
+                    <li><a href="/index.php/contact">Contact</a></li>
+                    <li><a href="/index.php/news">News</a></li>
                     <li><a href="#partner"><button class="btn btn-default btn-bloom">Partner with us</button></a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -41,7 +41,7 @@
     <div class="bloomlines lines"></div>
       <div class="container">
         <div class="bloom-wrap">
-          <div class="col-md-5 col-sm-5 col-md-offset-2">
+          <div class="col-md-5 col-sm-6 col-md-offset-2">
              <div class="block">
               <div class="bg-brown col-sm-12 bloom-slider"></div>
             </div>
@@ -124,7 +124,7 @@ Helping MSMEs successfully grow their business is core to our mission.</p>
             </div>
           </div>
           <div class="col-sm-12 text-center">
-            <div class="col-sm-4 col-md-offset-4"><a class="btn btn-default btn-block btn-partner" href="contact.html">Become a Partner</a></div>
+            <div class="col-sm-4 col-md-offset-4"><a class="btn btn-default btn-block btn-partner" href="index.php/contact">Become a Partner</a></div>
           </div>
         </div>
       </div>

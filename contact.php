@@ -44,7 +44,7 @@ if(isset($_POST['submitted'])) {
     //If there is no error, send the email
     if(!isset($hasError)) {
 
-      $emailTo = 'wrilben@icloud.com';
+      $emailTo = 'support@bloomimpact.net';
       $subject = 'Contact Form Submission from '.$name;
       $sendCopy = trim($_POST['sendCopy']);
       $body = "Name: $name \n\nEmail: $email \n\nComments: $comments";
@@ -87,9 +87,9 @@ if(isset($_POST['submitted'])) {
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="/">Home</a></li>
                     <li><a href="/#intro">How it works</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="news">News</a></li>
+                    <li><a href="index.php/about">About</a></li>
+                    <li><a href="index.php/contact">Contact</a></li>
+                    <li><a href="index.php/news">News</a></li>
                     <li><a href="/#partner"><button class="btn btn-default btn-bloom">Partner with us</button></a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -107,7 +107,7 @@ if(isset($_POST['submitted'])) {
               <div class="col-md-12">
                 <div class="block">
                   <h3>Drop Us A Note</h3>
-                  <p>Need Help? Want a partner. Don't hesitate to contact us.</p>
+                  <p>Need Help? Want to partner. Don't hesitate to contact us.</p>
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ if(isset($_POST['submitted'])) {
   <?php if (have_posts()) : ?>
   
   <?php while (have_posts()) : the_post(); ?>
-    
+
     <?php if(isset($hasError) || isset($captchaError)) { ?>
           <div class="alert alert-danger">
   <strong>There was an error submitting the form.
@@ -135,12 +135,14 @@ if(isset($_POST['submitted'])) {
                 <div class="block">
                   <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
                     <div class="form-group">
+                      <label for="contactName">Name</label>
                       <input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="form-control required" placeholder="Your Name">
                       <?php if($nameError != '') { ?>
             <span class="error"><?=$nameError;?></span> 
           <?php } ?>
                     </div>
                     <div class="form-group">
+                      <label for="email">Email</label>
                       <input type="email" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="form-control required" placeholder="Email Address">
                       <?php if($emailError != '') { ?>
             <span class="error"><?=$emailError;?></span>
@@ -148,6 +150,7 @@ if(isset($_POST['submitted'])) {
                     </div>
                     <div class="block">
                     <div class="form-group-2">
+                      <label for="commentsText">Comments</label>
                       <textarea class="form-control" name="comments" id="commentsText" rows="3" placeholder="Your Message">
                         <?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?>
                       </textarea>
@@ -171,7 +174,7 @@ if(isset($_POST['submitted'])) {
                       <i class="fa fa-map-marker"></i>Weija, Accra Ghana
                     </li>
                     <li>
-                      <i class="fa fa-envelope-o"></i>Email: support@bloomimpact.com
+                      <i class="fa fa-envelope-o"></i>Email: support@bloomimpact.net
                     </li>
                     <li>
                       <i class="fa fa-phone"></i>Phone: +233 55 636 5845
