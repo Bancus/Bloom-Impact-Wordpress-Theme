@@ -2,7 +2,7 @@
 Theme Name: Bloom Impact.
 Theme URI: https://bloomimpact.net
 Description: Bloom Impact SME Financial Services Marketplace
-Version: 1.4
+Version: 2.7
 Author: Benedict Asamoah
 Author URI: benedictasamoah.github.io
 */
@@ -1122,3 +1122,61 @@ animation: dude .34005s 1000 forwards;
 #home{background:url("img/slider-bg.jpg") 10% 0 no-repeat fixed;background-size:cover;padding:200px 0 280px;height:40vh!important;position:relative;overflow:hidden!important;font-family:Roboto,sans-serif!important;outline:0!important}#home .block h1,#home .block p{font-family:Lato,sans-serif}#home:before{content:"";position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;background:linear-gradient(to top,#261e03,#7a6934);opacity:.8}#home .block{color:#E3E3E4;padding:10px;width:100%!important}#home .block h1{font-weight:100;font-size:45px;line-height:60px;letter-spacing:10px;padding-bottom:45px}#home .block p{font-size:23px;line-height:44px;font-weight:300;letter-spacing:3px}
 #call-to-action{background:url(img/call-to-action-bg.jpg) no-repeat fixed;background-size:cover;padding:70px 0;position:relative;text-align:center;color:#fff}#call-to-action:before{content:"";position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;background:#2c2319;opacity:.8}
 .error{color: #f00 !important; font-size:13px !important; margin:10px !important;}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+.agent-content h3{
+  font-size: 16px !important;
+}
+.agent-content ul {
+  margin: 10px !important;
+}
+.agent-content ul li {
+  list-style: decimal !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  margin-top: 5px !important;
+}
+  @media(min-width: 768px) {
+    .agent-img {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      bottom: 0;
+      height: calc(100% - 50px);
+      width: 50%;
+      background: url('img/agents.jpg') !important;
+      background-size: cover !important;
+      background-position: 50% 50%;
+    }
+    .agent-content {
+      position: absolute;
+      top: 50px;
+      padding: 60px 20px;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 50%;
+      background:#fff;
+    }
+  }
+  @media(max-width:767px) {
+    .agent-img {
+      position: relative;    
+      width: 100%;
+      height: 400px;
+      background: url('img/agents-mobi.jpg') !important;
+      background-size: cover !important;
+      background-position: 50% 50%;
+    }
+    .agent-content {
+      position: relative;
+      padding: 40px 20px;
+      width: 100%;
+      background:#fff;
+    } 
+  }

@@ -71,7 +71,7 @@ $wp_query->is_home = false;
  
 while(have_posts()): the_post();
   ?>
-  <h2><?php the_title() /* post title */ ?></h2>
+  <h4><?php the_title() /* post title */ ?></h4>
 
   <p><?php the_excerpt(); ?></p>
    <p><a href="/index.php/news_details/?postid=<?php echo $id; ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="button btn btn-xs btn-default btn-bloom">Read More</a></p>
@@ -91,8 +91,35 @@ if( function_exists('wp_pagenavi') ) wp_pagenavi(); // WP-PageNavi function
 </div>
 </div>
     </section>
+
+    <a id="back-to-top" href="#" class="btn btn-default btn-bloom back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
     <!-- ..................................End Content................................................-->
     <?php get_footer(); ?>
     <?php wp_footer(); ?>
+    <script>
+  jQuery('.twitter-read-more').click(function(){
+      jQuery('.news-twitter').css('max-height', '100%');
+    });
+  jQuery(document).ready(function(){
+     jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 50) {
+                jQuery('#back-to-top').fadeIn();
+            } else {
+                jQuery('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        jQuery('#back-to-top').click(function () {
+            jQuery('#back-to-top').tooltip('hide');
+            jQuery('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        jQuery('#back-to-top').tooltip('show');
+
+});
+    </script>
     </body>
 </html>

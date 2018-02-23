@@ -87,9 +87,9 @@ if(isset($_POST['submitted'])) {
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="/">Home</a></li>
                     <li><a href="/#intro">How it works</a></li>
-                    <li><a href="index.php/about">About</a></li>
-                    <li><a href="index.php/contact">Contact</a></li>
-                    <li><a href="index.php/news">News</a></li>
+                    <li><a href="/index.php/about">About</a></li>
+                    <li><a href="/index.php/contact">Contact</a></li>
+                    <li><a href="/index.php/news">News</a></li>
                     <li><a href="/#partner"><button class="btn btn-default btn-bloom">Partner with us</button></a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -166,12 +166,12 @@ if(isset($_POST['submitted'])) {
               </div>
               <div class="col-md-6 col-sm-12">
                 <div id="contact-box" class="row">
-              <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+              <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                 <div class="block">
                   <h2>Stop By For A visit</h2>
                   <ul class="address-block">
                     <li>
-                      <i class="fa fa-map-marker"></i>Weija, Accra Ghana
+                      <i class="fa fa-map-marker"></i>Accra, Ghana
                     </li>
                     <li>
                       <i class="fa fa-envelope-o"></i>Email: support@bloomimpact.net

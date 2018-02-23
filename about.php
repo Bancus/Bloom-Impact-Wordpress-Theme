@@ -25,9 +25,9 @@
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="/">Home</a></li>
                     <li><a href="/#intro">How it works</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="news">News</a></li>
+                    <li><a href="/index.php/about">About</a></li>
+                    <li><a href="/index.php/contact">Contact</a></li>
+                    <li><a href="/index.php/news">News</a></li>
                     <li><a href="/#partner"><button class="btn btn-default btn-bloom">Partner with us</button></a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -63,7 +63,7 @@ We aim to democratize how unbanked and underserved micro and small businesses ge
         </div>
         <div class="col-sm-4">
         <div class="team-pics">
-        <div class="col-md-6 col-sm-6 col-xs-6 team-pic">
+          <div class="col-md-6 col-sm-6 col-xs-6 team-pic">
           <a href="#team" id="carol" class="d-block mb-4 h-100">
             <img class="img-fluid img-thumbnail" src="<?php bloginfo('template_url'); ?>/img/team/carol.jpeg" alt="">
           </a>
@@ -84,13 +84,23 @@ We aim to democratize how unbanked and underserved micro and small businesses ge
           </a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6 team-pic">
+          <a href="#team" id="sarah" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="<?php bloginfo('template_url'); ?>/img/team/sarah.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 team-pic">
+          <a href="#team" id="omar" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="<?php bloginfo('template_url'); ?>/img/team/omar.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 team-pic">
           <a href="#team" id="emma" class="d-block mb-4 h-100">
             <img class="img-fluid img-thumbnail" src="<?php bloginfo('template_url'); ?>/img/team/emma.jpg" alt="">
           </a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6 team-pic">
-          <a href="#team" id="edward" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="<?php bloginfo('template_url'); ?>/img/team/edward.jpg" alt="">
+          <a href="#team" id="daniel" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="<?php bloginfo('template_url'); ?>/img/team/daniel.jpg" alt="">
           </a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6 team-pic">
@@ -99,8 +109,8 @@ We aim to democratize how unbanked and underserved micro and small businesses ge
           </a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6 team-pic">
-          <a href="#team" id="daniel" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="<?php bloginfo('template_url'); ?>/img/team/daniel.jpg" alt="">
+          <a href="#team" id="edward" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="<?php bloginfo('template_url'); ?>/img/team/edward.jpg" alt="">
           </a>
         </div>
       </div>
@@ -132,49 +142,19 @@ When he is not hacking ideas or technology, David loves to travel, experience di
              <div>
                     <div class="user">
                       <img src="<?php bloginfo('template_url'); ?>/img/team/george.jpg" alt="George Acheampong">
-                      <p><span>George Acheampong</span> Operations Associate</p>
+                      <p><span>George Acheampong</span> Operations and Growth Manager</p>
                     </div>
-                    <p class="text-left">George is an Operations Associate monitoring and supporting our relationships with Financial Service Providers in areas such as product management, marketplace usage, lead management, customer satisfaction and customer support.</p><p class="text-left">
+                    <p class="text-left">George is an Operations and Growth Manager monitoring and supporting our relationships with Financial Service Providers in areas such as product management, marketplace usage, lead management, customer satisfaction and customer support.</p><p class="text-left">
 George is a passionate, self-driven, committed Financial Analyst and Business Growth strategist with rich experience in financial services operations and keen interest to support Micro, Small and Medium enterprises. He is a licensed investment advisor and holds a Bachelor of Science degree in Actuarial Science with Insurance.
 </p><p class="text-left">
 Prior to joining Bloom Impact, George worked as an Investment Analyst with SGL Royal Kapita Ltd, a fund management and investment advisory firm, where he managed investment funds and provided advisory services. He has business management skills and experience working with SME business operations.
 In his free time, you’ll find George swimming, singing with his church choir or taking a road trip anywhere.</p>
                 </div>
+
+
                 <div>
                     <div class="user">
-                      <img src="<?php bloginfo('template_url'); ?>/img/team/edward.jpg" alt="Edward Pie">
-                      <p><span>Edward Pie</span> Mobile App Developer</p>
-                    </div>
-                    <p class="text-left">Edward is a mobile developer helping craft our Android App. As an experienced Software Engineer for both Android and iOS development, he is able to solve complex problems, develop high-performance applications, and leverage the latest programming languages to meet challenging business requirements. He has keen interest in Machine Learning and its application to Financial Services, Agriculture, and Health.</p>
-                    <p class="text-left">
-Prior to Bloom Impact, Edward has worked as a mobile App developer at Saya Inc. and Rancard Solutions Ltd, as a backend developer at IC Securities Ltd, and as a Software Engineer (backend + mobile App Dev) at SMSGH Ltd.
-Edward is an avid reader and always ready to play football or swim at the beach anytime of the day..</p>                </div>
-            <div>
-                    <div class="user">
-                      <img src="<?php bloginfo('template_url'); ?>/img/team/andrew.jpg" alt="Edward Pie">
-                      <p><span>Andrew Fixler</span> Andrew Fixler</p>
-                    </div>
-                    <p class="text-left">Andrew is an Operations Intern passionately driving adoption of our service on the ground in Ghana through various partnerships and events as well as supporting the development of our marketplace with critical product and regulation research. </p>
-                    <p class="text-left">
-He is currently a Masters of Public Administration candidate at Columbia University’s School of International and Public Affairs, where he focuses on economic policy and financial inclusion.
-Prior to  interning with Bloom Impact, he worked with Accion International’s Center for Financial Inclusion, Boston Strategies International, and did fundraising work for non-profits in Boston.
-Andrew graduated with a degree in Economics and International Affairs from Lafayette College in Pennsylvania and loves running, music, hiking around Ghana and ultimate frisbee.</p>
-                </div>
-            <div>
-                    <div class="user">
-                      <img src="<?php bloginfo('template_url'); ?>/img/team/daniel.jpg" alt="Daniel Park">
-                      <p><span>Daniel Park</span> Strategy Intern</p>
-                    </div>
-                    <p class="text-left">Daniel is a Strategy Intern managing a variety of things including our Competitor Matrix, creating our KPI reporting, developing our PR and Press strategy and driving our social media activities. He’s also fantastic at jumping in to help with any operational challenges we encounter.  
-</p><p class="text-left">
-Daniel is passionate about the potential for market solutions to drive social innovation, and is currently pursuing a double degree from HEC Paris and the Norwegian School of Economics (NHH), where he will earn an MSc in Sustainability and Social Innovation and an MSc in Economics and Business Administration. He also holds a BA in International Studies from Boston College.
-</p><p class="text-left">
-Prior to Bloom Impact, Daniel worked with 1001Pact, a French equity crowd funding startup servicing social enterprises, where he helped inform the expansion of the firm into a new market. He also has previous professional experience working in corporate finance, internal consulting, and non-profit development.
-Outside of pursuing his commitment to social impact, Daniel enjoys eating his mom’s home cooked food, getting involved at church, traveling, and playing lacrosse.</p>
-                </div>
-          <div>
-                    <div class="user">
-                      <img src="<?php bloginfo('template_url'); ?>/img/team/ben.jpg" alt="Daniel Park">
+                      <img src="<?php bloginfo('template_url'); ?>/img/team/ben.jpg" alt="Benedict Asamoah">
                       <p><span>Benedict Asamoah</span> Full Stack Developer</p>
                     </div>
                     <p class="text-left">As a Full Stack developer, Benedict works on a variety of things including interaction design &amp; front-end development. Benedict loves to solve problems and create a delightful user experience. 
@@ -187,12 +167,39 @@ geomapping solution in Ghana and creating a digital platform called Ventsell, a 
 Benedict enjoys EDM (Electronic Dance Music) - keeping the team updated on the latest -  and playing video games during his free time.
 </p>
                 </div>
+
                  <div>
                     <div class="user">
-                      <img src="<?php bloginfo('template_url'); ?>/img/team/emma.jpg" alt="Daniel Park">
-                      <p><span>Emmanuel Baah</span> Operations</p>
+                      <img src="<?php bloginfo('template_url'); ?>/img/team/sarah.png" alt="Sarah Adamani">
+                      <p><span>Sarah Adamani</span> Growth and Operations Associate</p>
                     </div>
-                    <p class="text-left">Emmanuel is an Operations Associate for Bloom Impact working part-time to drive MSME
+<p class="text-left">Sarah is a Growth and Operations Associate for Bloom Impact working in the field to drive
+awareness and education for MSME owners about our mobile App, support customers and drive adoption growth.
+</p>
+<p class="text-left">
+Sarah’s background is a perfect blend for advancing Bloom Impact, having both SME finance and mobile App support experience along with good customer relation and management skills. Prior to joining BloomImpact, Sarah worked with Millicom Ghana (Tigo) in Customer Relations providing advice, education and information to clarify customers’ needs using mobile applications. She also worked with Tema Development Cooperation and Ghana Revenue Authority (Custom Division).
+</p>
+<p class="text-left">
+Sarah holds a Bachelor of Arts in Economics and Information Studies from the University of Ghana, Legon. She is currently studying for an investment advisor license with the
+Ghana Stock Exchange Training school.  In her free time, you can find Sarah reading and spending time with family and inspiring youth in her community.
+</p>
+                </div>
+                <div>
+                    <div class="user">
+                      <img src="<?php bloginfo('template_url'); ?>/img/team/omar.jpg" alt="Omar Madjoub">
+                      <p><span>Omar Majdoub</span> Mobile App Developer</p>
+                    </div>
+                    <p class="text-left">At Bloom Impact, Omar works on crafting and building our mobile App and various APIs critical to our service. He has over 10 years relevant experience working in IT and creating Apps. Prior to Bloom Impact Omar was a mobile developer for companies in Ghana including Ampersand, GlobalCloud and Corenett. </p><p class="text-left">His experience ranges from developing mobile apps and software for payment gateways, location systems and IoT backends with a breadth of experience in java, javascript, node.js, Django, Python, AWS, to name a few.</p>
+<p class="text-left">
+Omar started his career in IT as a technician, sysadmin and passionately moved into programming. He is also quite keen and involved with data science and crypto currencies and co-founded the Blockchain Society of Ghana. 
+</p>
+                </div>
+<div>
+                    <div class="user">
+                      <img src="<?php bloginfo('template_url'); ?>/img/team/emma.jpg" alt="Emmanuel Baah">
+                      <p><span>Emmanuel Baah</span> Operations and Growth Associate</p>
+                    </div>
+                    <p class="text-left">Emmanuel is an Operations Associate for Bloom Impact working to drive MSME
 adoption of our service in the field and through various partnerships and events.  He also provides customer support and
 shares insights for our product development since he knows first hand how business owners use our App and what they need.</p>
 <p class="text-left">
@@ -208,7 +215,44 @@ entrepreneurship development and effective team management skills.
 In his free time, he loves to spend time with his family, watch football, get involved at
 church activities or listen to music.
 </p>
+</div>
+
+            <div>
+                    <div class="user">
+                      <img src="<?php bloginfo('template_url'); ?>/img/team/daniel.jpg" alt="Daniel Park">
+                      <p><span>Daniel Park</span> Strategy Intern</p>
+                    </div>
+                    <p class="text-left">Daniel is a Strategy Intern managing a variety of things including our Competitor Matrix, creating our KPI reporting, developing our PR and Press strategy and driving our social media activities. He’s also fantastic at jumping in to help with any operational challenges we encounter.  
+</p><p class="text-left">
+Daniel is passionate about the potential for market solutions to drive social innovation, and is currently pursuing a double degree from HEC Paris and the Norwegian School of Economics (NHH), where he will earn an MSc in Sustainability and Social Innovation and an MSc in Economics and Business Administration. He also holds a BA in International Studies from Boston College.
+</p><p class="text-left">
+Prior to Bloom Impact, Daniel worked with 1001Pact, a French equity crowd funding startup servicing social enterprises, where he helped inform the expansion of the firm into a new market. He also has previous professional experience working in corporate finance, internal consulting, and non-profit development.
+Outside of pursuing his commitment to social impact, Daniel enjoys eating his mom’s home cooked food, getting involved at church, traveling, and playing lacrosse.</p>
                 </div>
+            <div>
+                    <div class="user">
+                      <img src="<?php bloginfo('template_url'); ?>/img/team/andrew.jpg" alt="Andrew Fixler">
+                      <p><span>Andrew Fixler</span> Operations Intern</p>
+                    </div>
+                    <p class="text-left">Andrew is an Operations Intern passionately driving adoption of our service on the ground in Ghana through various partnerships and events as well as supporting the development of our marketplace with critical product and regulation research. </p>
+                    <p class="text-left">
+He is currently a Masters of Public Administration candidate at Columbia University’s School of International and Public Affairs, where he focuses on economic policy and financial inclusion.
+Prior to  interning with Bloom Impact, he worked with Accion International’s Center for Financial Inclusion, Boston Strategies International, and did fundraising work for non-profits in Boston.
+Andrew graduated with a degree in Economics and International Affairs from Lafayette College in Pennsylvania and loves running, music, hiking around Ghana and ultimate frisbee.</p>
+                </div>
+
+            <div>
+                    <div class="user">
+                      <img src="<?php bloginfo('template_url'); ?>/img/team/edward.jpg" alt="Edward Pie">
+                      <p><span>Edward Pie</span> Mobile App Developer</p>
+                    </div>
+                    <p class="text-left">Edward is a mobile developer helping craft our Android App. As an experienced Software Engineer for both Android and iOS development, he is able to solve complex problems, develop high-performance applications, and leverage the latest programming languages to meet challenging business requirements. He has keen interest in Machine Learning and its application to Financial Services, Agriculture, and Health.</p>
+                    <p class="text-left">
+Prior to Bloom Impact, Edward has worked as a mobile App developer at Saya Inc. and Rancard Solutions Ltd, as a backend developer at IC Securities Ltd, and as a Software Engineer (backend + mobile App Dev) at SMSGH Ltd.
+Edward is an avid reader and always ready to play football or swim at the beach anytime of the day..</p>                </div>      
+                 
+                
+               
             </div>
           </div>
         </div>

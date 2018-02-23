@@ -46,7 +46,7 @@ $bloom_post = get_post($post);
       <div class="container">
         <div class="col-sm-8">
           <article>
-           <h3><?php echo $bloom_post->post_title;?></h3>
+           <h2><?php echo $bloom_post->post_title;?></h2>
            <p>
             <div class="clearfixe">
               <?php echo $bloom_post->post_content;?>
@@ -65,8 +65,35 @@ $bloom_post = get_post($post);
 </div>
 </div>
     </section>
+    <a id="back-to-top" href="#" class="btn btn-default btn-bloom back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
+
     <!-- ..................................End Content................................................-->
     <?php get_footer(); ?>
     <?php wp_footer(); ?>
+    <script>
+  jQuery('.twitter-read-more').click(function(){
+      jQuery('.news-twitter').css('max-height', '100%');
+    });
+  jQuery(document).ready(function(){
+     jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 50) {
+                jQuery('#back-to-top').fadeIn();
+            } else {
+                jQuery('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        jQuery('#back-to-top').click(function () {
+            jQuery('#back-to-top').tooltip('hide');
+            jQuery('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        jQuery('#back-to-top').tooltip('show');
+
+});
+    </script>
     </body>
 </html>
